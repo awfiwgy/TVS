@@ -4,42 +4,42 @@
 #EXTINF:-1 tvg-id="Кино 18+ International" tvg-name="Кино 18+ International" tvg-logo="" group-title="午夜频道",Кино 18+ International
 https://v2.catcast.tv/content/40381/index.m3u8#http://line.hello-ott.xyz/jCp4YyMfXc/nowo2O4ogJ/1451481
 #EXTINF:-1 tvg-id="pigo" tvg-name="pigo" tvg-logo="" group-title="午夜频道",pigo
-http://hinow-turn-pull.asia-cdn.com:80/live/79506f45bb1cc439e179846c0a502f5f.flv#https://cf005.paopao.video:443/6FA889EA7A6FC4659B929A38188A059E5BE0BB8B
+http://hinow-turn-pull.asia-cdn.com:80/live/67e8aafa7778f691c7a83fffac0e2192.flv#https://cf005.paopao.video:443/6FA889EA7A6FC4659B929A38188A059E5BE0BB8B
 #EXTINF:-1 tvg-id="日本映画" tvg-name="日本映画" tvg-logo="" group-title="午夜频道",日本映画
-http://hinow-turn-pull.asia-cdn.com:80/live/bf97db26d9ebc4a9509372909b4154f6.flv
+http://hinow-turn-pull.asia-cdn.com:80/live/c1cd319bee2b99b68be08116cb185ce7.flv
 #EXTINF:-1 tvg-id="东映" tvg-name="东映" tvg-logo="" group-title="午夜频道",东映
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs27#http://15.204.105.50:25461/live/G2s9zK2n9m/xDtwVfWM8T/86.ts#http://15.204.105.50:25461/live/G2s9zK2n9m/xDtwVfWM8T/89.ts#http://45.235.0.78:80/PLAYBOYTV-HD/index.m3u8#http://190.14.10.19:16000/play/a045/index.m3u8#http://rhsbjv7k.tvclub.xyz/iptv/N8HKZ3DNUQKK2D/6242/index.m3u8
-#EXTINF:-1 tvg-id="驚艷" tvg-name="驚艷" tvg-logo="" group-title="台湾频道",驚艷
+#EXTINF:-1 tvg-id="驚艷" tvg-name="驚艷" tvg-logo="" group-title="台湾频道_88640",驚艷
 http://15.204.105.50:25461/live/G2s9zK2n9m/xDtwVfWM8T/85.ts
-#EXTINF:-1 tvg-id="潘朵拉完美" tvg-name="潘朵拉完美" tvg-logo="" group-title="台湾频道",潘朵拉完美
+#EXTINF:-1 tvg-id="潘朵拉完美" tvg-name="潘朵拉完美" tvg-logo="" group-title="台湾频道_88640",潘朵拉完美
 http://15.204.105.50:25461/live/G2s9zK2n9m/xDtwVfWM8T/86.ts
-#EXTINF:-1 tvg-id="松視1台" tvg-name="松視1台" tvg-logo="" group-title="台湾频道",松視1台
+#EXTINF:-1 tvg-id="松視1台" tvg-name="松視1台" tvg-logo="" group-title="台湾频道_88640",松視1台
 http://15.204.105.50:25461/live/G2s9zK2n9m/xDtwVfWM8T/88.ts
-#EXTINF:-1 tvg-id="松視2台" tvg-name="松視2台" tvg-logo="" group-title="台湾频道",松視2台
+#EXTINF:-1 tvg-id="松視2台" tvg-name="松視2台" tvg-logo="" group-title="台湾频道_88640",松視2台
 http://15.204.105.50:25461/live/G2s9zK2n9m/xDtwVfWM8T/89.ts
-#EXTINF:-1 tvg-id="极限" tvg-name="极限" tvg-logo="" group-title="台湾频道",极限
-http://hls-pull-wicketpw.speedws.com:80/live/f52e385227d3e03cc65fa7342d5bae75.flv
-#EXTINF:-1 tvg-id="happy" tvg-name="happy" tvg-logo="" group-title="台湾频道",happy
-http://hls-pull-wicketpw.speedws.com:80/live/1418412ce34d5e7692e335cf33e430a2.flv
-#EXTINF:-1 tvg-id="香蕉" tvg-name="香蕉" tvg-logo="" group-title="台湾频道",香蕉
-http://hls-pull-wicketpw.speedws.com:80/live/74371d962de4145a0cd12b055b1f7cfe.flv
-#EXTINF:-1 tvg-id="惊艳" tvg-name="惊艳" tvg-logo="" group-title="台湾频道",惊艳
-http://hls-pull-wicketpw.speedws.com:80/live/f7f09b6ed6a864ba60f30774b9446f3e.flv
-#EXTINF:-1 tvg-id="潘多拉" tvg-name="潘多拉" tvg-logo="" group-title="台湾频道",潘多拉
-http://hls-pull-wicketpw.speedws.com:80/live/342122ce80bccb8c477dba4e01262aa7.flv
-#EXTINF:-1 tvg-id="彩虹电影" tvg-name="彩虹电影" tvg-logo="" group-title="台湾频道",彩虹电影
-http://hls-pull-wicketpw.speedws.com:80/live/e4ce93e6ffc38cca81a2f320f9ffd515.flv
-#EXTINF:-1 tvg-id="彩虹k" tvg-name="彩虹k" tvg-logo="" group-title="台湾频道",彩虹k
-http://hls-pull-wicketpw.speedws.com:80/live/c669f3a181b2c5f2a9afa430db5099de.flv
-#EXTINF:-1 tvg-id="彩虹e" tvg-name="彩虹e" tvg-logo="" group-title="台湾频道",彩虹e
-http://hls-pull-wicketpw.speedws.com:80/live/2b34b35d256cb9624864ab14c7715547.flv
-#EXTINF:-1 tvg-id="松视3" tvg-name="松视3" tvg-logo="" group-title="台湾频道",松视3
-http://hls-pull-wicketpw.speedws.com:80/live/c35f7797188e52a369e73cb4ab4f7fbc.flv
-#EXTINF:-1 tvg-id="松视1" tvg-name="松视1" tvg-logo="" group-title="台湾频道",松视1
-http://hls-pull-wicketpw.speedws.com:80/live/d2479f37f9ff388ee5116fa4299184cd.flv
-#EXTINF:-1 tvg-id="以上为临时源" tvg-name="以上为临时源" tvg-logo="" group-title="台湾频道",以上为临时源
+#EXTINF:-1 tvg-id="极限" tvg-name="极限" tvg-logo="" group-title="台湾频道_88640",极限
+http://hls-pull-wicketpw.speedws.com:80/live/dd8bfdecee1da93908a83621d0145626.flv
+#EXTINF:-1 tvg-id="happy" tvg-name="happy" tvg-logo="" group-title="台湾频道_88640",happy
+http://hls-pull-wicketpw.speedws.com:80/live/1cfca18835afaa31237b22295fb3dcb6.flv
+#EXTINF:-1 tvg-id="香蕉" tvg-name="香蕉" tvg-logo="" group-title="台湾频道_88640",香蕉
+http://hls-pull-wicketpw.speedws.com:80/live/240b18d516fc52c641fcc5fcfdaf408a.flv
+#EXTINF:-1 tvg-id="惊艳" tvg-name="惊艳" tvg-logo="" group-title="台湾频道_88640",惊艳
+http://hls-pull-wicketpw.speedws.com:80/live/15f421272b79c01a680b2ec0542eff48.flv
+#EXTINF:-1 tvg-id="潘多拉" tvg-name="潘多拉" tvg-logo="" group-title="台湾频道_88640",潘多拉
+http://hls-pull-wicketpw.speedws.com:80/live/ae94502a2b51c980d05df8cfdce26812.flv
+#EXTINF:-1 tvg-id="彩虹电影" tvg-name="彩虹电影" tvg-logo="" group-title="台湾频道_88640",彩虹电影
+http://hls-pull-wicketpw.speedws.com:80/live/5783adc5446b62fad370b5942243b7d7.flv
+#EXTINF:-1 tvg-id="彩虹k" tvg-name="彩虹k" tvg-logo="" group-title="台湾频道_88640",彩虹k
+http://hls-pull-wicketpw.speedws.com:80/live/130a43b11e6264405b1c76e9dbd3abf6.flv
+#EXTINF:-1 tvg-id="彩虹e" tvg-name="彩虹e" tvg-logo="" group-title="台湾频道_88640",彩虹e
+http://hls-pull-wicketpw.speedws.com:80/live/293302bddd180fd1f965dd9eae529ffb.flv
+#EXTINF:-1 tvg-id="松视3" tvg-name="松视3" tvg-logo="" group-title="台湾频道_88640",松视3
+http://hls-pull-wicketpw.speedws.com:80/live/cb13b096c5e1a4bbbb30d7a50252b11d.flv
+#EXTINF:-1 tvg-id="松视1" tvg-name="松视1" tvg-logo="" group-title="台湾频道_88640",松视1
+http://hls-pull-wicketpw.speedws.com:80/live/b0f72e480a047839b0cb9a04ab178166.flv
+#EXTINF:-1 tvg-id="以上为临时源" tvg-name="以上为临时源" tvg-logo="" group-title="台湾频道_88640",以上为临时源
 https://cf005.paopao.video:443/8FD49DF7895AED29D436FF2D3A28828D6FD808FB
-#EXTINF:-1 tvg-id="无信号请重启软件" tvg-name="无信号请重启软件" tvg-logo="" group-title="台湾频道",无信号请重启软件
+#EXTINF:-1 tvg-id="无信号请重启软件" tvg-name="无信号请重启软件" tvg-logo="" group-title="台湾频道_88640",无信号请重启软件
 https://cf005.paopao.video:443/8FD49DF7895AED29D436FF2D3A28828D6FD808FB
 #EXTINF:-1 tvg-id="playboy" tvg-name="playboy" tvg-logo="" group-title="俄罗斯_88640",playboy
 http://92.62.149.2/playboy/index.m3u8
