@@ -239,6 +239,17 @@
         "ext": "./json/jianpian.json"
     },
     {
+        "key": "http://caiji.dyttzyapi.com",
+        "name": "🎥电影天堂｜采集",
+        "type": 0,
+        "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/at/xml/",
+        "searchable": 1,
+        "quickSearch": 1,
+        "changeable": 1,
+        "filterable": 1,
+        "timeout": 120
+    },
+    {
         "key": "爱看机器人",
         "name": "👖爱看机器人",
         "type": 3,
@@ -330,7 +341,7 @@
         "changeable": 1,
         "filterable": 1,
         "timeout": 120,
-        "ext": "https://m.jiabaide.cn,https://m.y2s52n7.com,https://m.hkybqufgh.com,https://m.sizhengxt.com,https://m.9zhoukj.com"
+        "ext": "https://m.hellosht52bwb.com,https://m.jiabaide.cn,https://m.y2s52n7.com,https://m.hkybqufgh.com,https://m.sizhengxt.com,https://m.9zhoukj.com"
     },
     {
         "key": "云播影视",
@@ -407,7 +418,7 @@
         "searchable": 1,
         "changeable": 0,
         "ext": {
-            "siteUrl": "https://f1.qilin8.com/api",
+            "siteUrl": "https://bt.muxia.fun/api",
             "commonConfig": "./json/peizhi.json"
         }
     },
@@ -1129,6 +1140,11 @@
         "filterable": 1,
         "timeout": 120,
         "ext": {
+            "线路二次截取": "",
+            "线路数组": "tab-item\"&&</div",
+            "线路标题": "<span>&&</span>+【共+<small>&&</small>+集】",
+            "播放二次截取": "",
+            "播放数组": "module-play-list\">&&</div>",
             "分类url": "https://www.ttdm3.me/vod-show/{cateId}--------{catePg}---/",
             "分类": "中国动漫$1#日本动漫$2#欧美动漫$3#其他动漫$4#动画电影$5#里番动漫$6"
         }
@@ -1746,6 +1762,21 @@
         }
     },
     {
+        "key": "py_Hanime",
+        "name": "🔞🅿️Hanime｜py",
+        "type": 3,
+        "api": "./json/Hanime.py",
+        "searchable": 1,
+        "quickSearch": 1,
+        "changeable": 1,
+        "filterable": 1,
+        "timeout": 120,
+        "style": {
+            "type": "rect",
+            "ratio": 1.33
+        }
+    },
+    {
         "key": "py_玩具社区",
         "name": "🔞🅿️玩具社区｜py",
         "type": 3,
@@ -1779,7 +1810,7 @@
         "key": "py_菠萝七区",
         "name": "🔞🅿️菠萝七区｜py",
         "type": 3,
-        "api": "./py/菠萝七区.py",
+        "api": "./json/菠萝七区.py",
         "searchable": 1,
         "quickSearch": 1,
         "changeable": 1,
@@ -1794,7 +1825,7 @@
         "key": "py_黑料不打烊",
         "name": "🔞🅿️黑料不打烊｜py",
         "type": 3,
-        "api": "./py/黑料不打烊.py",
+        "api": "./json/黑料不打烊.py",
         "searchable": 1,
         "quickSearch": 1,
         "changeable": 1,
@@ -1809,7 +1840,7 @@
         "key": "py_轻量版",
         "name": "🔞🅿️51吃瓜轻量版｜py",
         "type": 3,
-        "api": "./py/51吃瓜轻量版.py",
+        "api": "./json/51吃瓜轻量版.py",
         "searchable": 1,
         "quickSearch": 1,
         "changeable": 1,
@@ -1854,7 +1885,7 @@
         "key": "py_91短视频",
         "name": "🔞🅿️91短视频（翻）｜py",
         "type": 3,
-        "api": "./py/91.py",
+        "api": "./json/91.py",
         "searchable": 1,
         "quickSearch": 1,
         "changeable": 1,
@@ -1869,7 +1900,7 @@
         "key": "py_大洋马",
         "name": "🔞🅿️大洋马｜py",
         "type": 3,
-        "api": "./py/大洋马.py",
+        "api": "./json/大洋马.py",
         "searchable": 1,
         "quickSearch": 1,
         "changeable": 1,
@@ -2132,25 +2163,6 @@
             "http": "http://127.0.0.1:1072",
             "https": "http://127.0.0.1:1072"
         }
-    },
-    {
-        "key": "PLAYZ",
-        "name": "🔞PLAYZ",
-        "type": 3,
-        "api": "csp_Emby",
-        "searchable": 1,
-        "quickSearch": 1,
-        "filterable": 1,
-        "ext": {
-            "server": "http://127.0.0.1:9966/api/proxy/https://playz.mjji.de:443",
-            "username": "awfiwgy",
-            "password": "kiss7722570",
-            "ua": "Yamby/1.0.2(Android)",
-            "client": "Yamby",
-            "deviceName": "",
-            "commonConfig": "./json/peizhi.json"
-        },
-        "changeable": 1
     },
     {
         "key": "drpy_js_JAVXX",

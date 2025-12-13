@@ -230,6 +230,17 @@
         "ext": "./json/jianpian.json"
     },
     {
+        "key": "http://caiji.dyttzyapi.com",
+        "name": "🎥电影天堂｜采集",
+        "type": 0,
+        "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/at/xml/",
+        "searchable": 1,
+        "quickSearch": 1,
+        "changeable": 1,
+        "filterable": 1,
+        "timeout": 120
+    },
+    {
         "key": "爱看机器人",
         "name": "👖爱看机器人",
         "type": 3,
@@ -321,7 +332,7 @@
         "changeable": 1,
         "filterable": 1,
         "timeout": 120,
-        "ext": "https://m.jiabaide.cn,https://m.y2s52n7.com,https://m.hkybqufgh.com,https://m.sizhengxt.com,https://m.9zhoukj.com"
+        "ext": "https://m.hellosht52bwb.com,https://m.jiabaide.cn,https://m.y2s52n7.com,https://m.hkybqufgh.com,https://m.sizhengxt.com,https://m.9zhoukj.com"
     },
     {
         "key": "云播影视",
@@ -398,7 +409,7 @@
         "searchable": 1,
         "changeable": 0,
         "ext": {
-            "siteUrl": "https://f1.qilin8.com/api",
+            "siteUrl": "https://bt.muxia.fun/api",
             "commonConfig": "./json/peizhi.json"
         }
     },
@@ -1120,6 +1131,11 @@
         "filterable": 1,
         "timeout": 120,
         "ext": {
+            "线路二次截取": "",
+            "线路数组": "tab-item\"&&</div",
+            "线路标题": "<span>&&</span>+【共+<small>&&</small>+集】",
+            "播放二次截取": "",
+            "播放数组": "module-play-list\">&&</div>",
             "分类url": "https://www.ttdm3.me/vod-show/{cateId}--------{catePg}---/",
             "分类": "中国动漫$1#日本动漫$2#欧美动漫$3#其他动漫$4#动画电影$5#里番动漫$6"
         }
