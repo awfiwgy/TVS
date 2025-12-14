@@ -225,7 +225,7 @@
         "filterable": 1,
         "timeout": 120,
         "ext": {
-            "site": "https://www.jiabaide.cn",
+            "site": "https://www.ksnnhbj.com",
             "commonConfig": "./json/peizhi.json"
         }
     },
