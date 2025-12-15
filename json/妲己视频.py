@@ -9,14 +9,14 @@ import urllib.parse
 
 sys.path.append('..')
 
-murl = "https://www.6vyd.com/web/index.html"
+murl = "https://3642.7rnr.com/web/index.html"
 headerx = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0'
-          }
+  'User-Agent': "Mozilla/5.0 (Linux; Android 13; M2102J2SC Build/TKQ1.221114.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/143.0.7499.3 Mobile Safari/537.36",
+  'Accept-Encoding': "gzip, deflate, br, zstd"
+}
 response = requests.get(murl, allow_redirects=True)
 xurl = response.url
-nurl = xurl + '/web/abcdefg.ashx?action=getindexdata'
-durl = xurl + '/web/abcdefg.ashx?action=getvideo&vid='
+nurl = xurl + '/web/abcdefg.ashx'
 pm = ''
 
 class Spider(Spider):
@@ -58,7 +58,11 @@ class Spider(Spider):
     def homeVideoContent(self):
         videos = []
         try:
-            detail = requests.get(url=nurl, headers=headerx)
+            payload = {
+                'action': "getindexdata",
+                't': "1762753963537691",
+                's': "5ad87a586f5aae9c2ca4f913d45f8958"}
+            detail = requests.post(url=nurl, data=payload, headers=headerx)
             detail.encoding = "utf-8"
             res = detail.json()
             video_list = res.get("videos", [])
@@ -90,11 +94,27 @@ class Spider(Spider):
             page = 1
 
         if page == '1':
-            url = f'{xurl}/web/abcdefg.ashx?action=getvideos&vtype={cid}&pageindex=1&pagesize=12'
+            payload1 = {
+                'action': "getvideos",
+                'vtype': {cid},
+                'pageindex': "1",
+                'pagesize': "12",
+                'tags': "全部",
+                'sortindex': "1",
+                't': "176275570014518",
+                's': "ff4218e4cafd552c4d0c93eb935c14f1"}
         else:
-            url = f'{xurl}/web/abcdefg.ashx?action=getvideos&vtype={cid}&pageindex={str(page)}&pagesize=12'
+            payload1 = {
+                'action': "getvideos",
+                'vtype': {cid},
+                'pageindex': {str(page)},
+                'pagesize': "12",
+                'tags': "全部",
+                'sortindex': "1",
+                't': "176275570014518",
+                's': "ff4218e4cafd552c4d0c93eb935c14f1"}
         try:
-            detail = requests.get(url=url, headers=headerx)
+            detail = requests.post(url=nurl, data=payload1, headers=headerx)
             detail.encoding = "utf-8"
             res = detail.json()
             video_list = res.get("videos", [])
@@ -126,9 +146,12 @@ class Spider(Spider):
         result = {}
         videos = []
         playurl = ''
-        if 'http' not in did:
-            did = durl + did
-        res1 = requests.get(url=did, headers=headerx)
+        payload2 = {
+            'action': "getvideo",
+            'vid': did,
+            't': "1762756475175265",
+            's': "656d5b40c2122f86bc35895dc58fd113"}
+        res1 = requests.post(url=nurl, data=payload2, headers=headerx)
         res1.encoding = "utf-8"
         res = res1.json()
         node = res.get("data", {}).get("Table", [{}])[0]
@@ -182,8 +205,15 @@ class Spider(Spider):
     def searchContentPage(self, key, quick, page):
         result = {}
         videos = []
-        url = f'{xurl}/web/abcdefg.ashx?action=search&p={key}&pageindex={str(page)}&pagesize=12'
-        detail = requests.post(url=url, headers=headerx)
+        payload3 = {
+            'action': "search",
+            'p': {key},
+            'pageindex': {str(page)},
+            'pagesize': "12",
+            'channelid': "0",
+            't': "1762756927087982",
+            's': "2392bd117b4e6e35b5ec1fa9bc380b6f"}
+        detail = requests.post(url=nurl, data=payload3, headers=headerx)
         detail.encoding = "utf-8"
         res = detail.json()
         video_list = res.get("data", [])
