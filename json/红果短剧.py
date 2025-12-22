@@ -24,7 +24,7 @@ class Spider(Spider):
     def destroy(self):
         pass
 
-    host = 'https://www.hongguodj.cc'
+    host = 'https://www.hongguodj1.cc'
     headers = {
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
         'Accept-Language': 'zh-CN,zh;q=0.9',
