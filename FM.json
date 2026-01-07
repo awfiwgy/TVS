@@ -56,7 +56,6 @@
         "type": 0,
         "playerType": 2,
         "url": "https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg1",
-        "playerType": 2,
         "timeout": 10
     },
     {
@@ -631,6 +630,19 @@
         "changeable": 1,
         "filterable": 1,
         "timeout": 120
+    },
+    {
+        "key": "农民影视",
+        "name": "👖农民｜影视",
+        "type": 3,
+        "api": "csp_Wwys",
+        "jar": "https://tvbox.catvod.com/xs/spider.jar",
+        "searchable": 1,
+        "quickSearch": 1,
+        "changeable": 1,
+        "filterable": 1,
+        "timeout": 120,
+        "ext": "https://vip.wwgz.cn:5200"
     },
     {
         "key": "https://www.qiyoudy.info",
