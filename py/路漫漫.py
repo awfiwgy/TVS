@@ -1,105 +1,70 @@
 import re
-import sys
 from base.spider import Spider
 
 class Spider(Spider):
+    def getName(self): return "路漫漫动漫"
+    def init(self, extend=""): pass
+    def isVideoFormat(self, url): pass
+    def manualVideoCheck(self): pass
+    def destroy(self): pass
+    
     def __init__(self):
         self.url = 'https://www.lmm50.com'
         self.header = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36', 'Referer': self.url}
 
-    def getName(self):
-        return "路漫漫动漫"
-
-    def init(self, extend=""):
-        pass
-
-    def isVideoFormat(self, url):
-        pass
-
-    def manualVideoCheck(self):
-        pass
-
     def homeContent(self, filter):
-        classes = [{'type_name': '国产动漫', 'type_id': 'guochandongman'}, {'type_name': '动态漫画', 'type_id': 'dongtaiman'}, {'type_name': '日本动漫', 'type_id': 'ribendongman'}, {'type_name': '欧美动漫', 'type_id': 'oumeidongman'}, {'type_name': '国产动画电影', 'type_id': 'guochandonghuadianying'}, {'type_name': '日本动画电影', 'type_id': 'ribendonghuadianying'}, {'type_name': '欧美动画电影', 'type_id': 'oumeidonghuadianying'}, {'type_name': '日本特摄剧', 'type_id': 'teshepian'}]
-        return {'class': classes}
+        c = [('国产动漫','guochandongman'),('动态漫画','dongtaiman'),('日本动漫','ribendongman'),('欧美动漫','oumeidongman'),('国产动画电影','guochandonghuadianying'),('日本动画电影','ribendonghuadianying'),('欧美动画电影','oumeidonghuadianying'),('日本特摄剧','teshepian')]
+        return {'class': [{'type_name': n, 'type_id': i} for n, i in c]}
 
     def homeVideoContent(self):
-        try:
-            return {'list': self._parse_vod_list(self.fetch(self.url, headers=self.header).text)}
-        except:
-            return {'list': []}
+        try: return {'list': self._p(self.fetch(self.url, headers=self.header).text)}
+        except: return {'list': []}
 
     def categoryContent(self, tid, pg, filter, extend):
-        url = f'{self.url}/type/{tid}.html' if pg == '1' else f'{self.url}/type/{tid}_{pg}.html'
         try:
-            return {'list': self._parse_vod_list(self.fetch(url, headers=self.header).text), 'page': int(pg), 'pagecount': 9999, 'limit': 20, 'total': 9999}
-        except:
-            return {'list': []}
+            u = f'{self.url}/type/{tid}.html' if pg == '1' else f'{self.url}/type/{tid}_{pg}.html'
+            return {'list': self._p(self.fetch(u, headers=self.header).text), 'page': int(pg), 'pagecount': 9999, 'limit': 20, 'total': 9999}
+        except: return {'list': []}
 
     def detailContent(self, ids):
         try:
-            r = self.fetch(f'{self.url}/detail/{ids[0]}.html', headers=self.header).text
-            vod = {'vod_id': ids[0], 'vod_name': '', 'vod_pic': '', 'vod_type': '', 'vod_year': '', 'vod_area': '', 'vod_remarks': '', 'vod_actor': '', 'vod_director': '', 'vod_content': ''}
-            tm = re.search(r'<h1 class="page-title">(.*?)</h1>', r)
-            if tm: vod['vod_name'] = tm.group(1)
-            pm = re.search(r'class="url_img" alt=".*?" src="(.*?)"', r)
-            if pm: vod['vod_pic'] = pm.group(1)
-            cm = re.search(r'class="video-info-item video-info-content">(.*?)</div>', r, re.S)
-            if cm: vod['vod_content'] = re.sub(r'<[^>]+>', '', cm.group(1)).strip()
-            pfl = []
-            for t in re.findall(r'data-dropdown-value="(.*?)"', r):
-                if t not in pfl: pfl.append(t)
-            purl = []
-            lbs = r.split('class="module-list')
-            for b in lbs[1:]:
+            h = self.fetch(f'{self.url}/detail/{ids[0]}.html', headers=self.header).text
+            v = {'vod_id': ids[0], 'vod_name': '', 'vod_pic': '', 'vod_type': '', 'vod_year': '', 'vod_area': '', 'vod_remarks': '', 'vod_actor': '', 'vod_director': '', 'vod_content': ''}
+            m1 = re.search(r'<h1 class="page-title">(.*?)</h1>', h)
+            if m1: v['vod_name'] = m1.group(1)
+            m2 = re.search(r'class="url_img" alt=".*?" src="(.*?)"', h)
+            if m2: v['vod_pic'] = m2.group(1)
+            m3 = re.search(r'class="video-info-item video-info-content">(.*?)</div>', h, re.S)
+            if m3: v['vod_content'] = re.sub(r'<[^>]+>', '', m3.group(1)).strip()
+            ts = list(dict.fromkeys(re.findall(r'data-dropdown-value="(.*?)"', h)))
+            us = []
+            for b in h.split('class="module-list')[1:]:
                 if 'module-blocklist' not in b: continue
-                eps = []
-                for h, n in re.findall(r'<a href="(/play/.*?.html)".*?<span>(.*?)</span>', b):
-                    eps.append(f"{n}${self.url}{h}")
-                if eps: purl.append("#".join(eps))
-            diff = len(purl) - len(pfl)
-            if diff > 0: pfl.extend([f"线路{len(pfl)+i+1}" for i in range(diff)])
-            elif diff < 0: pfl = pfl[:len(purl)]
-            vod['vod_play_from'] = "$$$".join(pfl)
-            vod['vod_play_url'] = "$$$".join(purl)
-            return {'list': [vod]}
-        except:
-            return {'list': []}
+                es = [f"{n}${self.url}{u}" for u, n in re.findall(r'<a href="(/play/.*?.html)".*?<span>(.*?)</span>', b)]
+                if es: us.append("#".join(es))
+            v['vod_play_from'] = "$$$".join(ts if len(ts) == len(us) else [f"线路{i+1}" for i in range(len(us))])
+            v['vod_play_url'] = "$$$".join(us)
+            return {'list': [v]}
+        except: return {'list': []}
 
     def searchContent(self, key, quick, pg="1"):
-        try:
-            return {'list': self._parse_vod_list(self.fetch(f'{self.url}/vod/search.html?wd={key}&page={pg}', headers=self.header).text)}
-        except:
-            return {'list': []}
+        try: return {'list': self._p(self.fetch(f'{self.url}/vod/search.html?wd={key}&page={pg}', headers=self.header).text)}
+        except: return {'list': []}
 
     def playerContent(self, flag, id, vipFlags):
         return {'parse': 1, 'url': id, 'header': self.header}
 
-    def localProxy(self, param):
-        return None
+    def localProxy(self, param): return None
 
-    def destroy(self):
-        pass
-
-    def _parse_vod_list(self, html):
-        v = []
-        for i, t in re.findall(r'<div class="video-img-box.*?>(.*?)<h6 class="title">(.*?)</h6>', html, re.S):
+    def _p(self, h):
+        l = []
+        for c, t in re.findall(r'<div class="video-img-box.*?>(.*?)<h6 class="title">(.*?)</h6>', h, re.S):
             try:
-                hm = re.search(r'href="/detail/(\d+).html"', i)
-                if not hm: continue
-                vid = hm.group(1)
-                pic = ''
-                sm = re.search(r'data-src="(.*?)"', i)
-                if sm: pic = sm.group(1)
-                else:
-                    smb = re.search(r'src="(.*?)"', i)
-                    if smb: pic = smb.group(1)
-                rem = ''
-                rm = re.search(r'class="label">(.*?)</span>', i)
-                if rm: rem = rm.group(1)
-                tit = ''
-                tm = re.search(r'<a.*?>(.*?)</a>', t)
-                if tm: tit = tm.group(1)
-                v.append({'vod_id': vid, 'vod_name': tit, 'vod_pic': pic, 'vod_remarks': rem})
-            except: continue
-        return v
+                vid = re.search(r'href="/detail/(\d+).html"', c)
+                if not vid: continue
+                img = re.search(r'data-src="(.*?)"', c) or re.search(r'src="(.*?)"', c)
+                rem = re.search(r'class="label">(.*?)</span>', c)
+                tit = re.search(r'<a.*?>(.*?)</a>', t)
+                l.append({'vod_id': vid.group(1), 'vod_name': tit.group(1) if tit else '', 'vod_pic': img.group(1) if img else '', 'vod_remarks': rem.group(1) if rem else ''})
+            except: pass
+        return l
