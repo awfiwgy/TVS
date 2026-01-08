@@ -1050,6 +1050,7 @@
         "filterable": 1,
         "timeout": 120,
         "ext": {
+            "副标题": "module-item-note\">&&</div>",
             "分类url": "https://www.xz8.cc/vodshow/{cateId}--------{catePg}---/",
             "分类": "动漫$4#电影$1#剧集$2#综艺$4"
         }
@@ -1589,17 +1590,6 @@
         "name": "🔞🅿️黄色仓库｜py",
         "type": 3,
         "api": "./py/黄色仓库.py",
-        "searchable": 1,
-        "quickSearch": 1,
-        "changeable": 1,
-        "filterable": 1,
-        "timeout": 120
-    },
-    {
-        "key": "py_比卡比卡",
-        "name": "🔞🅿️比卡比卡｜py",
-        "type": 3,
-        "api": "./py/比卡比卡.py",
         "searchable": 1,
         "quickSearch": 1,
         "changeable": 1,

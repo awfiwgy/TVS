@@ -1040,6 +1040,7 @@
         "filterable": 1,
         "timeout": 120,
         "ext": {
+            "副标题": "module-item-note\">&&</div>",
             "分类url": "https://www.xz8.cc/vodshow/{cateId}--------{catePg}---/",
             "分类": "动漫$4#电影$1#剧集$2#综艺$4"
         }
