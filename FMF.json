@@ -762,6 +762,7 @@
             "标题": "title=\"&&\"",
             "图片": "data-original=\"&&\"",
             "副标题": "pic-text text-right\">&&</span>",
+            "线路标题": "＞&&<",
             "分类url": "http://dbku.tv/vodshow/{cateId}--------{catePg}---.html",
             "分类": "动漫$4#港剧$20#陆剧$13#电影$1#短剧$21#日韩剧$15#台泰剧$14#剧集$2#综艺$3"
         }
@@ -948,28 +949,6 @@
         }
     },
     {
-        "key": "http://www.668dy.vip",
-        "name": "💕奇优影视┃多线",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "jar": "https://tvbox.catvod.com/xs/spider.jar",
-        "searchable": 1,
-        "quickSearch": 1,
-        "changeable": 1,
-        "filterable": 1,
-        "timeout": 120,
-        "ext": {
-            "请求头": "User-Agent$MOBILE_UA",
-            "编码": "UTF-8",
-            "直接播放": " \"1\"",
-            "主页url": "http://www.shudx.com",
-            "分类数组": "<a&&/a>",
-            "分类标题": ">&&<",
-            "分类url": "http://www.shudx.com/list/{cateId}_{catePg}.html",
-            "分类ID": "/list/&&.html"
-        }
-    },
-    {
         "key": "西瓜影院",
         "name": "💕西瓜影院丨多线",
         "type": 3,
@@ -1003,26 +982,6 @@
             "分类标题": ">&&<",
             "分类url": "https://www.kukuys.me/p/{cateId}-pg-{catePg}.html",
             "分类": "电视剧$2#动漫$4#电影$1#综艺$3#好看视频$20"
-        }
-    },
-    {
-        "key": "哈哈影视",
-        "name": "💕哈哈影视┃多线",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "jar": "https://tvbox.catvod.com/xs/spider.jar",
-        "searchable": 1,
-        "quickSearch": 1,
-        "changeable": 1,
-        "filterable": 1,
-        "timeout": 120,
-        "ext": {
-            "请求头": "User-Agent$MOBILE_UA",
-            "编码": "UTF-8",
-            "主页url": "https://www.hahads.com/type/{cateid}.html",
-            "跳转播放链接": "var player_*\"url\":\"&&\"",
-            "分类url": "https://www.hahads.com/show/{cateId}--------{catePg}---.html",
-            "分类": "动漫$4#电影$1#剧集$2#综艺$3#伦理$20"
         }
     },
     {
@@ -1330,39 +1289,6 @@
         }
     },
     {
-        "key": "https://zxdy5.top",
-        "name": "💕555┃电影",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "jar": "https://tvbox.catvod.com/xs/spider.jar",
-        "searchable": 1,
-        "quickSearch": 1,
-        "changeable": 1,
-        "filterable": 1,
-        "timeout": 120,
-        "ext": {
-            "请求头": "User-Agent$MOBILE_UA",
-            "编码": "UTF-8",
-            "主页url": "https://www.555zxdy.cc",
-            "数组": "/vod/detail/&&class=\"icon-play\">",
-            "链接": "/vod/detail/+&&\"",
-            "标题": "title=\"&&\"",
-            "图片": "data-original=\"&&\"",
-            "副标题": "note\">&&</div>",
-            "播放数组": "module-play-list-content&&</div>",
-            "播放列表": "<a&&a>",
-            "播放链接": "href=\"&&\"",
-            "播放标题": "<span>&&</span>",
-            "线路数组": "module-tab-item tab-item&&</div>",
-            "线路标题": "<span>&&</span>",
-            "跳转播放链接": "urlDecode(Base64(var player_*url\":\"&&\"))",
-            "简介": "<p>&&</p>",
-            "分类": "动漫$3#电影$1#电视剧$2#短剧$45#综艺$4",
-            "分类url": "/vod/show/area/{area}/by/{by}/class/{class}/id/{cateId}/lang/{lang}/letter/{letter}/page/{catePg}/year/{year}.html",
-            "类型": "动作$6#喜剧$7#爱情$8#科幻$9#恐怖$10#剧情$11#战争$12#悬疑$35#冒险$36#动漫$37#记录$20||国产剧$13#港剧$21#台剧$14#短剧$45#韩剧$15#日剧$23#泰剧$22#美剧$16#海外剧$34||内地$30#港台$31#日韩$32#欧美$33||内地$25#港台$26#日韩$27#欧美$28#海外$29||空"
-        }
-    },
-    {
         "key": "乐哥特供-电影先生",
         "name": "💕电影┃先生",
         "type": 3,
@@ -1410,24 +1336,6 @@
             "分类url": "http://www.gdjwjch.com/show/{cateId}-{area}-{by}-{class}-{lang}-{letter}---{catePg}---{year}.html",
             "分类": "动漫$4#电影$1#电视剧$2#综艺$3#短剧$36",
             "类型": "国产动漫$29#日韩动漫$30#国产剧$13#香港剧$14#动作片$6#喜剧片$7#爱情片$8#科幻片$9#恐怖片$10#剧情片$11#战争片$12#动画片$24#纪录片$23#预告片$35#韩国剧$15#欧美剧$16#台湾剧$20#日本剧$21#泰剧$34#其它剧$22#大陆综艺$25#日韩综艺$26#港台综艺$27#欧美综艺$28#欧美动漫$31#其它动漫$32#爽文短剧$37#女频恋爱$38#反转爽剧$39#古装仙侠$40#年代穿越$41#脑洞悬疑$42#现代都市$43"
-        }
-    },
-    {
-        "key": "饺子影院",
-        "name": "💕饺子影院｜多线",
-        "type": 3,
-        "api": "csp_XBPQ",
-        "jar": "https://tvbox.catvod.com/xs/spider.jar",
-        "searchable": 1,
-        "quickSearch": 1,
-        "changeable": 1,
-        "filterable": 1,
-        "timeout": 120,
-        "ext": {
-            "线路标题": "[排序:5>]",
-            "播放标题": "📹+>&&</a>",
-            "分类url": "https://www.jiaozi.me/search.php?page={catePg}&searchtype=5&tid={cateId}&jq={class}&area={area}&year={year}",
-            "分类": "动漫$41#电影$1#电视剧$2"
         }
     },
     {
