@@ -529,6 +529,17 @@
         "timeout": 120
     },
     {
+        "key": "py_界影视",
+        "name": "🅿️界影视｜py",
+        "type": 3,
+        "api": "./py/界影视.py",
+        "searchable": 1,
+        "quickSearch": 1,
+        "changeable": 1,
+        "filterable": 1,
+        "timeout": 120
+    },
+    {
         "key": "py_小红影视",
         "name": "🅿️小红影视｜py",
         "type": 3,
@@ -1519,6 +1530,50 @@
         "timeout": 120
     },
     {
+        "key": "py_五月天",
+        "name": "🔞🅿️五月天｜py",
+        "type": 3,
+        "api": "./py/五月天.py",
+        "searchable": 1,
+        "quickSearch": 1,
+        "changeable": 1,
+        "filterable": 1,
+        "timeout": 120
+    },
+    {
+        "key": "py_比卡比卡",
+        "name": "🔞🅿️比卡比卡｜py",
+        "type": 3,
+        "api": "./py/比卡比卡.py",
+        "searchable": 1,
+        "quickSearch": 1,
+        "changeable": 1,
+        "filterable": 1,
+        "timeout": 120
+    },
+    {
+        "key": "py_肉视频",
+        "name": "🔞🅿️肉视频｜py",
+        "type": 3,
+        "api": "./py/肉视频.py",
+        "searchable": 1,
+        "quickSearch": 1,
+        "changeable": 1,
+        "filterable": 1,
+        "timeout": 120
+    },
+    {
+        "key": "py_禁片天堂",
+        "name": "🔞🅿️禁片天堂｜py",
+        "type": 3,
+        "api": "./py/禁片天堂.py",
+        "searchable": 1,
+        "quickSearch": 1,
+        "changeable": 1,
+        "filterable": 1,
+        "timeout": 120
+    },
+    {
         "key": "py_玩具社区",
         "name": "🔞🅿️玩具社区｜py",
         "type": 3,
@@ -1545,6 +1600,17 @@
         "name": "🔞🅿️妲己视频｜py",
         "type": 3,
         "api": "./py/妲己视频.py",
+        "searchable": 1,
+        "quickSearch": 1,
+        "changeable": 1,
+        "filterable": 1,
+        "timeout": 120
+    },
+    {
+        "key": "py_911大事件",
+        "name": "🔞🅿️911大事件｜py",
+        "type": 3,
+        "api": "./py/911大事件.py",
         "searchable": 1,
         "quickSearch": 1,
         "changeable": 1,
@@ -2295,7 +2361,7 @@
         "timeout": 120
     },
     {
-        "key": "51吃瓜轻量版",
+        "key": "https://rhsnpxhr.xyz",
         "name": "🔞51吃瓜轻量版",
         "type": 3,
         "api": "csp_XBPQ",
@@ -2309,7 +2375,7 @@
             "作者": "Aries",
             "站名": "51吃瓜轻量版",
             "编码": "UTF-8",
-            "主页url": "https://anymore.cnvvzla.com/ybml.html",
+            "主页url": "https://bottle.jokpgfs.cc/ybml.html",
             "直接播放": "1",
             "免嗅": "1",
             "数组": "<article itemscope itemtype&&</article>",
@@ -2317,7 +2383,7 @@
             "标题": "headline\">&&</h2>",
             "链接": "href=\"&&\"",
             "副标题": "<span>&&</span>",
-            "分类url": "https://anymore.cnvvzla.com/category/{cateId}/{catePg}/",
+            "分类url": "https://bottle.jokpgfs.cc/category/{cateId}/{catePg}/",
             "分类": "今日吃瓜$wpcz#热门大瓜$rdsj#网红黑料$whhl#淫骚反差$snsn#伦理道德$lldd#精品挑选$jpts#看片娱乐$ysyl#学生校园$xsxy#海外精选$hwjx#外网吃瓜$wwcg#新闻百科$xwbk"
         }
     }
