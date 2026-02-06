@@ -1,13 +1,9 @@
 {
   "class":[
-//    {
-//      "type_name": "时下流行-刚刚发布视频",
-//      "type_id": "时下流行-刚刚发布视频"
-//    },
-//    {
-//      "type_name": "近期热门视频",
-//      "type_id": "时下流行-近期热门视频"
-//    },
+    {
+      "type_id":"國漫",
+      "type_name":"國漫"
+    },
     {
       "type_id":"LIST:HDR,Girls HDR,Landscape HDR,Walk HDR",
       "type_name":"HDR"
@@ -27,10 +23,6 @@
     {
       "type_id":"LIST:新闻 Live,体育直播,赛事直播",
       "type_name":"新聞直播"
-    },
-    {
-      "type_id":"國漫",
-      "type_name":"國漫"
     },
     {
       "type_id":"短劇",
