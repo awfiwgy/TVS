@@ -33,7 +33,7 @@ class Spider(BaseSpider):
         print(f"使用站点: {self.host}")
 
     def getName(self):
-        return "🌈 轻量版|终极完美版"
+        return "🌈 911大事件"
 
     def isVideoFormat(self, url):
         return any(ext in (url or '') for ext in ['.m3u8', '.mp4', '.ts'])
@@ -47,9 +47,8 @@ class Spider(BaseSpider):
 
     def get_working_host(self):
         dynamic_urls = [
-            'https://bottle.jokpgfs.cc',
-            'https://rhsnpxhr.xyz', 
-            'https://51web16.com'
+            'https://911dsj.com',
+            'https://911dsj.com/ybml.html'
         ]
         for url in dynamic_urls:
             try:
@@ -220,11 +219,11 @@ class Spider(BaseSpider):
                 vod_content = '获取标签失败'
 
             if not vod_content:
-                vod_content = data('h1').text() or '轻量版'
+                vod_content = data('h1').text() or '911大事件'
 
-            return {'list': [{'vod_play_from': '轻量版', 'vod_play_url': play_url, 'vod_content': vod_content}]}
+            return {'list': [{'vod_play_from': '911大事件', 'vod_play_url': play_url, 'vod_content': vod_content}]}
         except:
-            return {'list': [{'vod_play_from': '轻量版', 'vod_play_url': '获取失败'}]}
+            return {'list': [{'vod_play_from': '911大事件', 'vod_play_url': '获取失败'}]}
 
     def searchContent(self, key, quick, pg="1"):
         try:

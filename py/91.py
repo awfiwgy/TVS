@@ -14,7 +14,7 @@ class Spider(Spider):
 
     def destroy(self):
         pass
-
+#https://88chigua.com#https://51-cg.com
     host='https://down.nigx.cn/91-short.com'
 
     headers = {
@@ -86,7 +86,7 @@ class Spider(Spider):
             url=self.host+ids[0]
             p=1
         vod = {
-            'vod_director': '沐辰',
+            'vod_director': '',
             'vod_play_from': '91——short',
             'vod_play_url': f'{doc(".module-item-in").text() or doc("h2.module-title").text()}${url}@@{p}'
         }
